@@ -1,10 +1,10 @@
-//adapted from this excellent sketch by jaden.mansfield! https://editor.p5js.org/jaden.mansfield/sketches/CUBPZKyP1
+// //adapted from this excellent sketch by jaden.mansfield! https://editor.p5js.org/jaden.mansfield/sketches/CUBPZKyP1
 
 // let bot = new RiveScript(); //new bot
 // let submitBttn, inputField;
 
 // function preload() {
-//   bot.loadFile("pbo.txt").then(loaded).catch(error);
+//   bot.loadFile("clem.txt").then(loaded).catch(error);
 // }
 // function setup() {
 //   noCanvas();
@@ -27,7 +27,7 @@
 // //response - change this somehow to not stack? or display differently
 // function respond(reply) {
 //   // createP(reply);
-//   let pboResponse = createElement('p', reply);
+//   let clemResponse = createElement('p', reply);
 // }
 
 // function loaded() {
@@ -41,13 +41,11 @@
 // }
 
 
-
-
 let bot;
 let text_input, text_output;
 
 async function loadBot() {
-  await bot.loadFile("pbo.txt");
+  await bot.loadFile("clem.txt");
   bot.sortReplies();
 }
 

@@ -8,8 +8,8 @@ function setup() {
   let col1 = color(235, 52, 119);
 
   let button1 = createButton('Chat With Meatloaf').mousePressed(generateText);
-button1.style('font-size', '12px');
-button1.style('background-color', col1);
+// button1.style('font-size', '12px');
+// button1.style('background-color', col1);
 // button1.position(75,430);
 
   async function generateText() {

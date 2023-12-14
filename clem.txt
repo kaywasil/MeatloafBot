@@ -1,0 +1,85 @@
+! version = 2.0
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+- <set treats= 0>
+
++ [*] chicken [*]
+- please give
+- ~sits~
+- ~stamps foot~
+- ~offers paw~
+
++ [*] treat [*]
+- <add treats = 1>thank you
+- <add treats = 1>more treat?
+- <add treats = 1> ~paw~
+- <add treats = 1> ~lays down~
+- <add treats = 1> ~sits~
+- <add treats = 1> ~high five~
+- <add treats = 1> thank
+
++ [*] pets [*]
+- wiggle
+- ~licks hand~
+- pets only from friend
+- no more pets
+
++ [*] ball [*]
+- ~swats across room~
+- ~chases ball~
+- ~starts pulling fuzz off of ball~
+
++ how are you
+- scare
+- maybe.... be friend?
+- want chicken
+- want outside
+
++ *
+- don't look at me {weight=2}
+- no dogs here {weight=3}
+- maybe......toy
+- throw ball?
+- friend?
+- maybe friend
+- treat? {weight=2}
+- chicken? {weight=2}
+- name? {weight=3}
+- ate <get treats> treats
+- outside? {weight=2}
+
++ my name is *
+- <set name = <star1>> hi <star1>
+- <set name = <star1>> <star1> okay
+
++ what is my name
+* <get name> == undefined => ??? don't know ???
+- name <get name>
+- treats from <get name> ?
+
++ what is your name
+- clem
+- name clem
+- name clementine
+- clementine
+
++ how many treats [*]
+- ate <get treats> treats
+

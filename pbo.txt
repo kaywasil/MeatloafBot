@@ -18,6 +18,8 @@
 ! sub what'll = what will
 ! sub who's   = who is
 
+- <set treats= 0>
+
 + [*] turkey [*]
 - give
 - ggive me
@@ -25,6 +27,27 @@
 + [*] chicken [*]
 - give chixken
 - for me
+
++ [*] treat [*]
+- <add treats = 1>ggive
+- <add treats = 1>more
+- <add treats = 1>chickenn
+- <add treats = 1>YELL
+- <add treats = 1>yell
+
++ [*] pets [*]
+- purrrrrr
+- purrr
+- more
+- ~headbutt~
+
++ [*] boop [*]
+- blink
+- sniff
+- purr
+
++ [*] fork [*]
+- ~swats across room~
 
 + how are you
 - need attention
@@ -44,3 +67,24 @@
 - chicken?
 - fork?
 - give treat
+- name?
+- have <get treats> treats
+
++ my name is *
+- <set name = <star1>> henlo <star1>
+- <set name = <star1>> ggood <star1>
+- <set name = <star1>> <star1> purrr
+
++ what is my name
+* <get name> == undefined => ddon't know
+- name is <get name>
+- henlo <get name>
+
++ how many treats [*]
+- ate <get treats> treats
+
++ what is your name
+- Pbo
+- I'm pbo
+- peebus
+- the plague
